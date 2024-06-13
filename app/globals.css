@@ -123,3 +123,18 @@
     max-width: unset!important;
     position: unset!important;
   }
+
+  .carouselImageWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carouselImageWrapper img {
+    height: 100%;
+    width: auto;
+    border-radius: 1rem;
+  }
