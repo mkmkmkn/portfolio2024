@@ -20,48 +20,50 @@ export default function Home() {
       </section>
       <section
         id="works"
-        className="works w-11/12 max-w-screen-xl h-auto min-h-dvh py-16 lg:py-32 m-auto flex flex-row"
+        className="works w-full bg-gray-200 h-auto min-h-dvh py-16 lg:py-32"
       >
-        <div className="w-1/2 relative">
-          <div
-            className="worksImage left-0 top-20 absolute"
-            style={{ width: "90%" }}
-          >
-            <Image src="/twgss.jpg" fill alt="" />
-          </div>
-          <div
-            className="worksImage worksImage2 flex justify-center right-0 top-20 absolute overflow-hidden worksImage_small"
-            style={{ width: "60%" }}
-          >
-            <Image src="/cby.jpg" fill alt="" />
-          </div>
-          <div
-            className="worksImage left-10 top-20 absolute worksImage_large"
-            style={{ width: "75%" }}
-          >
-            <Image src="/noranekoatsume.jpg" fill alt="" />
-          </div>
-        </div>
-        <div className="w-1/2">
-          <div className="sectionTitle mb-12 text-center">
-            <h3 className="en mb-2 text-6xl font-bold">WORKS</h3>
-            <p className="jp text-3xl">作品</p>
-          </div>
-          <div className="worksLink w-full flex justify-around">
-            <Link
-              href="https://mkmkmkn.sakura.ne.jp/portfolio/#works-section"
-              target="_blank"
-              rel="noopener noreferrer"
+        <div className="w-11/12 max-w-screen-xl h-full m-auto flex flex-row">
+          <div className="w-1/2 relative">
+            <div
+              className="worksImage left-0 top-20 absolute"
+              style={{ width: "90%" }}
             >
-              制作実績を見る
-            </Link>
-            <Link
-              href="https://matchbox.work/portfolio/P47373376"
-              target="_blank"
-              rel="noopener noreferrer"
+              <Image src="/twgss.jpg" fill alt="" />
+            </div>
+            <div
+              className="worksImage worksImage2 flex justify-center right-0 top-20 absolute overflow-hidden worksImage_small"
+              style={{ width: "60%" }}
             >
-              実務での制作実績を見る
-            </Link>
+              <Image src="/cby.jpg" fill alt="" />
+            </div>
+            <div
+              className="worksImage left-10 top-20 absolute worksImage_large"
+              style={{ width: "75%" }}
+            >
+              <Image src="/noranekoatsume.jpg" fill alt="" />
+            </div>
+          </div>
+          <div className="w-1/2">
+            <div className="sectionTitle mb-12 text-center">
+              <h3 className="en mb-2 text-6xl font-bold">WORKS</h3>
+              <p className="jp text-3xl">作品</p>
+            </div>
+            <div className="worksLink w-full flex justify-around">
+              <Link
+                href="https://mkmkmkn.sakura.ne.jp/portfolio/#works-section"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                制作実績を見る
+              </Link>
+              <Link
+                href="https://matchbox.work/portfolio/P47373376"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                実務での制作実績を見る
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -117,18 +119,14 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="contact w-11/12 max-w-screen-xl h-dvh py-16 lg:py-32 m-auto flex flex-col items-center"
+        className="contact w-full bg-gray-200 max-w-screen-xl py-16 lg:py-32 m-auto flex flex-col items-center"
       >
         <div className="sectionTitle mb-12 text-center">
           <h3 className="en mb-2 text-6xl font-bold">CONTACT</h3>
           <p className="jp text-3xl">お問い合わせ</p>
         </div>
         <div className="worksLink w-full flex justify-around">
-          <Link
-            href="/contact"
-          >
-            メールフォームはこちら
-          </Link>
+          <Link href="/contact">メールフォームはこちら</Link>
         </div>
       </section>
     </main>
