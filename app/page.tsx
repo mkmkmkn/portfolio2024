@@ -119,7 +119,7 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="contact w-full bg-gray-200 max-w-screen-xl py-16 lg:py-32 m-auto flex flex-col items-center"
+        className="contact w-full bg-gray-200 py-16 lg:py-32 m-auto flex flex-col items-center"
       >
         <div className="sectionTitle mb-12 text-center">
           <h3 className="en mb-2 text-6xl font-bold">CONTACT</h3>
