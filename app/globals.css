@@ -86,11 +86,13 @@
   }
 
   .worksImage_large {
+    top: 12%;
     animation: parallax-large-anim linear;
     animation-timeline: scroll();
   }
   
   .worksImage_small {
+    top: 5%;
     animation: parallax-small-anim linear;
     animation-timeline: scroll();
   }
@@ -113,7 +115,7 @@
     }
   }
   
-  .aboutImage img {
+  /* .aboutImage img {
     position: unset!important;
   }
 
@@ -122,6 +124,10 @@
     margin-left: -30%;
     max-width: unset!important;
     position: unset!important;
+  } */
+
+  .carousel > div {
+    padding: 0 15%;
   }
 
   .carouselImageWrapper {
@@ -131,10 +137,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s ease;
+    transform: scale(0.9);
   }
 
   .carouselImageWrapper img {
     height: 100%;
     width: auto;
+    object-fit: cover;
     border-radius: 1rem;
+  }
+
+  /* .is-in-view .carouselImageWrapper {
+    transform: scale(1.0);
+  } */
+
+  .is-snapped .carouselImageWrapper {
+    transform: scale(1.0);
   }

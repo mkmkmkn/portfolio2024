@@ -10,6 +10,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import ClassNames from 'embla-carousel-class-names';
 
 export default function Home() {
   return (
@@ -31,19 +33,19 @@ export default function Home() {
         <div className="w-11/12 max-w-screen-xl aspect-video m-auto flex flex-row">
           <div className="w-1/2 relative">
             <div
-              className="worksImage left-0  absolute"
+              className="worksImage left-0 absolute"
               style={{ width: "90%" }}
             >
               <Image src="/twgss.jpg" fill alt="" />
             </div>
             <div
-              className="worksImage worksImage2 flex justify-center right-0  absolute overflow-hidden worksImage_small"
+              className="worksImage worksImage2 flex justify-center right-0 absolute overflow-hidden worksImage_small"
               style={{ width: "60%" }}
             >
               <Image src="/cby.jpg" fill alt="" />
             </div>
             <div
-              className="worksImage left-10  absolute worksImage_large"
+              className="worksImage left-10 absolute worksImage_large"
               style={{ width: "75%" }}
             >
               <Image src="/noranekoatsume.jpg" fill alt="" />
@@ -102,28 +104,42 @@ export default function Home() {
             旅行、釣り、バイク、カメラ、動画編集、温泉など
           </p>
         </div>
-        <div className="w-6/12">
-          <Carousel className="border-4 rounded-3xl bg-white">
+        <div className="w-6/12 border-4 rounded-3xl bg-white flex items-center">
+          <Carousel
+            opts={{
+              // align: "start",
+              loop: false,
+            }}
+            plugins={[
+              // Autoplay({
+              //   delay: 7000,
+              // }),
+              ClassNames({
+                className: "active",
+              })
+            ]}
+            className="carousel"
+          >
             <CarouselContent>
-              <CarouselItem>
-                <div className="carouselImageWrapper px-4 py-4">
+              <CarouselItem className=" ">
+                <div className="carouselImageWrapper px-0 py-0">
                   <Image src="/about1.jpg" width={1280} height={720} alt="" />
                 </div>
               </CarouselItem>
-              <CarouselItem>
-                <div className="carouselImageWrapper px-4 py-4">
+              <CarouselItem className=" ">
+                <div className="carouselImageWrapper px-0 py-0">
                   <Image src="/about2.jpg" width={1280} height={720} alt="" />
                 </div>
                 {/* <Image src="/about2.jpg" fill alt="" /> */}
               </CarouselItem>
-              <CarouselItem>
-                <div className="carouselImageWrapper px-4 py-4">
+              <CarouselItem className=" ">
+                <div className="carouselImageWrapper px-0 py-0">
                   <Image src="/about3.webp" width={1280} height={720} alt="" />
                 </div>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="translate-y-full left-1/3 top-auto -bottom-6 border-2 h-10 w-10"/>
-            <CarouselNext className="translate-y-full right-1/3 top-auto -bottom-6 border-2 h-10 w-10"/>
+            <CarouselPrevious className="translate-y-full left-1/3 top-auto -bottom-2 border-2 h-10 w-10" />
+            <CarouselNext className="translate-y-full right-1/3 top-auto -bottom-2 border-2 h-10 w-10" />
           </Carousel>
 
           {/* <div
