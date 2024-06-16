@@ -126,11 +126,11 @@
     position: unset!important;
   } */
 
-  .carousel > div {
+  .about .carousel > div {
     padding: 0 15%;
   }
 
-  .carouselImageWrapper {
+  .about .carousel .carouselImageWrapper {
     width: 100%;
     height: auto;
     aspect-ratio: 4 / 3;
@@ -141,17 +141,13 @@
     transform: scale(0.9);
   }
 
-  .carouselImageWrapper img {
+  .about .carousel .carouselImageWrapper img {
     height: 100%;
     width: auto;
     object-fit: cover;
     border-radius: 1rem;
   }
 
-  /* .is-in-view .carouselImageWrapper {
-    transform: scale(1.0);
-  } */
-
-  .is-snapped .carouselImageWrapper {
+  .about .carousel .active .carouselImageWrapper {
     transform: scale(1.0);
   }

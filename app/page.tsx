@@ -115,7 +115,8 @@ export default function Home() {
               //   delay: 7000,
               // }),
               ClassNames({
-                className: "active",
+                snapped: "active",
+                inView: "inView",
               })
             ]}
             className="carousel"
