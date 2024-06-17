@@ -30,7 +30,7 @@ export default function Home() {
         id="works"
         className="works w-full bg-gray-200 h-auto py-16 lg:py-32"
       >
-        <div className="w-11/12 max-w-screen-xl aspect-video m-auto flex flex-row">
+        <div className="w-11/12 max-w-screen-xl aspect-auto	sm:aspect-video m-auto flex flex-col sm:flex-row">
           <div className="w-1/2 relative">
             <div
               className="worksImage left-0 absolute"
@@ -56,7 +56,7 @@ export default function Home() {
               <h3 className="en mb-2 text-6xl font-bold">WORKS</h3>
               <p className="jp text-3xl">作品</p>
             </div>
-            <div className="worksLink w-full flex justify-around">
+            <div className="worksLink w-full flex justify-around items-center lg:items-start flex-col lg:flex-row">
               <Link
                 href="https://mkmkmkn.sakura.ne.jp/portfolio/#works-section"
                 target="_blank"

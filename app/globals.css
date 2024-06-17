@@ -126,28 +126,29 @@
     position: unset!important;
   } */
 
-  .about .carousel > div {
-    padding: 0 15%;
-  }
+  .about .carousel {
+    > div {
+      padding: 0 15%;
+    }
+    .carouselImageWrapper {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 1s ease;
+      transform: scale(0.9);
 
-  .about .carousel .carouselImageWrapper {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s ease;
-    transform: scale(0.9);
-  }
-
-  .about .carousel .carouselImageWrapper img {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-    border-radius: 1rem;
-  }
-
-  .about .carousel .active .carouselImageWrapper {
-    transform: scale(1.0);
+      img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+      
+      .active .carouselImageWrapper {
+        transform: scale(1.0);
+      }
+    }
   }
