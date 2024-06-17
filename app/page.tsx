@@ -30,28 +30,28 @@ export default function Home() {
         id="works"
         className="works w-full bg-gray-200 h-auto py-16 lg:py-32"
       >
-        <div className="w-11/12 max-w-screen-xl aspect-auto	sm:aspect-video m-auto flex flex-col sm:flex-row">
-          <div className="w-1/2 relative">
+        <div className="w-11/12 max-w-screen-xl aspect-auto	sm:aspect-video m-auto flex flex-col-reverse sm:flex-row">
+          <div className="sm:w-1/2 relative">
             <div
-              className="worksImage left-0 absolute"
+              className="worksImage left-0 sm:absolute"
               style={{ width: "90%" }}
             >
               <Image src="/twgss.jpg" fill alt="" />
             </div>
             <div
-              className="worksImage worksImage2 flex justify-center right-0 absolute overflow-hidden worksImage_small"
+              className="worksImage worksImage2 flex justify-center right-0 sm:absolute overflow-hidden worksImage_small"
               style={{ width: "60%" }}
             >
               <Image src="/cby.jpg" fill alt="" />
             </div>
             <div
-              className="worksImage left-10 absolute worksImage_large"
+              className="worksImage left-10 sm:absolute worksImage_large"
               style={{ width: "75%" }}
             >
               <Image src="/noranekoatsume.jpg" fill alt="" />
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="sm:w-1/2 mb-16 sm:mb-0">
             <div className="sectionTitle mb-12 text-center">
               <h3 className="en mb-2 text-6xl font-bold">WORKS</h3>
               <p className="jp text-3xl">作品</p>
@@ -77,9 +77,9 @@ export default function Home() {
       </section>
       <section
         id="about"
-        className="about w-11/12 max-w-screen-xl h-auto py-16 lg:py-32 m-auto flex flex-row justify-between"
+        className="about w-11/12 max-w-screen-xl h-auto py-16 lg:py-32 m-auto flex flex-col sm:flex-row justify-between"
       >
-        <div className="w-5/12">
+        <div className="sm:w-5/12 mb-16 sm:mb-0">
           <div className="sectionTitle mb-12 text-center">
             <h3 className="en mb-2 text-6xl font-bold">ABOUT</h3>
             <p className="jp text-3xl">自己紹介</p>
@@ -104,7 +104,7 @@ export default function Home() {
             旅行、釣り、バイク、カメラ、動画編集、温泉など
           </p>
         </div>
-        <div className="w-6/12 border-4 rounded-3xl bg-white flex items-center">
+        <div className="sm:w-6/12 border-4 rounded-3xl bg-white flex items-center mb-12 sm:mb-0">
           <Carousel
             opts={{
               // align: "start",

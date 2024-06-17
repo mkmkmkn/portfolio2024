@@ -97,6 +97,51 @@
     animation-timeline: scroll();
   }
 
+  @media (max-width:640px) {
+    .worksImage {
+      padding: 1rem;
+      margin-bottom: 2rem;
+      background-color: white;
+      width: 100%!important;
+      position: unset!important;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      border-radius: 1rem;
+
+      img {
+        object-fit: cover;
+        border: 2px solid hsl(var(--border));
+        border-radius: .5rem;
+      }
+    }
+
+    .worksImage:last-child {
+      margin-bottom: 0;
+    }
+  
+    .worksImage2 {
+      position: unset!important;
+
+      img {
+        width: 100%!important;
+        max-width: unset!important;
+        position: unset!important;
+      }
+    }
+  
+    .worksImage_large {
+      top: unset;
+      animation: unset;
+      animation-timeline: unset;
+    }
+    
+    .worksImage_small {
+      top: unset;
+      animation: unset;
+      animation-timeline: unset;
+    }
+  }
+
   @keyframes parallax-large-anim {
     from {
       transform: translateY(600px);
