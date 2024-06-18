@@ -11,9 +11,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import ClassNames from 'embla-carousel-class-names';
+import ClassNames from "embla-carousel-class-names";
+import { motion } from "framer-motion";
 
 export default function Home() {
+
   return (
     <main className="w-full">
       {/* <main className="snap-mandatory h-dvh block snap-y overflow-y-scroll"> */}
@@ -31,7 +33,23 @@ export default function Home() {
         className="works w-full bg-gray-200 h-auto py-16 lg:py-32"
       >
         <div className="w-11/12 max-w-screen-xl aspect-auto	sm:aspect-video m-auto flex flex-col-reverse sm:flex-row">
-          <div className="sm:w-1/2 relative">
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 25,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              bounce: 0.5,
+              duration: 0.85,
+            }}
+            viewport={{ once: true }}
+            className="sm:w-1/2 relative"
+          >
             <div
               className="worksImage left-0 sm:absolute"
               style={{ width: "90%" }}
@@ -50,7 +68,7 @@ export default function Home() {
             >
               <Image src="/noranekoatsume.jpg" fill alt="" />
             </div>
-          </div>
+          </motion.div>
           <div className="sm:w-1/2 mb-16 sm:mb-0">
             <div className="sectionTitle mb-12 text-center">
               <h3 className="en mb-2 text-6xl font-bold">WORKS</h3>
@@ -117,7 +135,7 @@ export default function Home() {
               ClassNames({
                 snapped: "active",
                 inView: "inView",
-              })
+              }),
             ]}
             className="carousel"
           >

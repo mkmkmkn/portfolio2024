@@ -6,10 +6,23 @@ import Footer from "./components/layouts/Footer";
 
 const notoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "MKportfolio2024",
-  description: "Motoki Takada portfolio ver 2024.",
-};
+// export const metadata: Metadata = {
+//   title: "MKportfolio2024",
+//   description: "Motoki Takada portfolio ver 2024.",
+// };
+
+// type PageProps = { 
+//   params: { id: string }
+// };
+
+// export function generateMetadata({ params }: PageProps) {
+//   console.log(params);
+//   const id = params.id;
+//   return {
+//     title: `アイコンページ：${id}`,
+//   }
+// }
+
 
 export default function RootLayout({
   children,
