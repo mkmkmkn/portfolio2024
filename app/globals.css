@@ -191,9 +191,8 @@
         object-fit: cover;
         border-radius: 1rem;
       }
-      
-      .active .carouselImageWrapper {
-        transform: scale(1.0);
-      }
+    }
+    .active .carouselImageWrapper {
+      transform: scale(1.0);
     }
   }
